@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Banner></Banner>
       <Stats></Stats>
-      <TrendingApps></TrendingApps>
+      <TrendingApps from="homepage"></TrendingApps>
     </div>
   );
 }

@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { FaDownload, FaStar } from "react-icons/fa";
 
 const AppsCard = ({ app }) => {
   return (
-    <div className="card bg-base-100 shadow-sm">
+    <Link href={`/apps/${app.id}`} className="card bg-base-100 shadow-sm">
       <figure>
         <Image width={200} height={200} src={app.image} alt={app.title}></Image>
       </figure>
@@ -23,7 +24,7 @@ const AppsCard = ({ app }) => {
           </span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
