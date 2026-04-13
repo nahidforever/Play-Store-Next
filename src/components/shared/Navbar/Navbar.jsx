@@ -15,6 +15,7 @@ const Navbar = () => {
           <MyLink href={"/"}>Home</MyLink>
           <MyLink href={"/apps"}>Apps</MyLink>
           <MyLink href={"/installation"}>Installation</MyLink>
+          <MyLink href={"/dashboard"}>Dashboard</MyLink>
         </ul>
 
         <button className="btn bg-purple-500 text-white">
