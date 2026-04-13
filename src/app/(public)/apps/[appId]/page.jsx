@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaBuilding, FaDownload, FaStar } from "react-icons/fa";
 import { notFound } from "next/navigation";
+import InstallToggleButton from "@/components/apps/InstallToggleButton";
 
 const appPromise = async () => {
   const res = await fetch("http://localhost:3000/data.json");
@@ -82,7 +83,7 @@ const AppsDetailsPage = async ({ params }) => {
             <div className="flex flex-wrap items-center gap-3">
               {/* <InstallToggleButton app={app} /> */}
 
-              {/* <InstallToggleButton app={app} /> */}
+              <InstallToggleButton app={app} />
               <Link href="/apps" className="btn btn-ghost btn-lg">
                 Back to apps
               </Link>
